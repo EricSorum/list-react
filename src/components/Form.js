@@ -10,7 +10,6 @@ class Form extends Component {
         person: {
            firstName: '',
            lastName: '',
-           num: 1,
            id: uniqid()
         },
         people: [],
@@ -32,7 +31,6 @@ class Form extends Component {
          person: { 
             firstName: '',
             lastName: '',
-            num: this.state.num + 1,
             id: uniqid()
           },
       })
