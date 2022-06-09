@@ -10,6 +10,7 @@ class Form extends Component {
         person: {
            firstName: '',
            lastName: '',
+           num: 1,
            id: uniqid()
         },
         people: [],
@@ -17,12 +18,14 @@ class Form extends Component {
    }
    handleChange = (e) => {
       this.setState({
-         /*...this.state,*/
+         //...this.state,
          person: {[e.target.name]: e.target.value}
          
       })
    }
-  
+  // So whichever field I enter last is the only one that appears after submit...
+  // The first error throws right when i type in a field... this probably leads to the second
+  // error, which is probably that the uniqid() is not being run.
    onSubmitTask = (e) => {
       this.setState({
          people: this.state.people.concat(this.state.person),
@@ -34,6 +37,7 @@ class Form extends Component {
           },
       })
       e.preventDefault();
+
    }
    render() {
       const { person, people } = this.state
