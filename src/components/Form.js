@@ -17,8 +17,8 @@ class Form extends Component {
    }
    handleChange = (e) => {
       this.setState({
-         //...this.state,
-         person: {[e.target.name]: e.target.value}
+         ...this.state,
+         person: {...this.state.person, [e.target.name]: e.target.value}
          
       })
    }
