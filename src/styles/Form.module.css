@@ -1,0 +1,18 @@
+.form, .list {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.agree {
+   display: flex;
+   gap: 10px;
+}
+
+.submitButton {
+   background-color: blanchedalmond;
+   width: 100px;
+   height: 30px;
+}

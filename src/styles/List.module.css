@@ -1,0 +1,63 @@
+ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 40px;
+}
+
+.deleteButton {
+   background-color: blanchedalmond;
+   width: 100px;
+   height: 60px;
+}
+
+.card {
+   display: inline-grid;
+   grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas:
+     "A B B B C"
+     "A B B B C"
+     "D D E E E";
+   width: 600px;
+   height: 300px;
+   gap: 10px;
+   padding: 10px;
+   box-shadow: 3px 3px 3px black;
+   border: 2px solid black;
+   border-radius: 2%;
+ }
+
+.userName, .userNumber, .delete, .screenName, .email {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.screenName {
+   border: 2px solid black;
+}
+
+.userNumber {
+   grid-area: A;
+   border-style: solid black 2px;
+}
+
+.screenName {
+   grid-area: B;
+   font-size: 2rem;
+   background-color: rgb(187, 224, 224);
+}
+
+.delete {
+   grid-area: C;
+}
+
+ .userName {
+    grid-area: D
+ }
+
+ .email {
+    grid-area: E;
+ }
